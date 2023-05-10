@@ -32,5 +32,8 @@
     @endforeach
     </tbody>
     </table>
+    <div class="text-center">
+      <a href="{{ route('comics.create') }}" class="btn btn-danger">Crea una nuova pasta</a>
+  <table class="table">
 </div>
 @endsection
