@@ -27,13 +27,16 @@
         <td>{{ $comic->title}}</td>
         <td>{{ $comic->price}}$</td>
         <td>{{ $comic->sale_date}}</td>
-        <td><a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Dettagli</a></td>
+        <td>
+          <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Dettagli</a>
+          <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning btn-sm">Modifica</a>
+        </td>
     </tr>  
     @endforeach
     </tbody>
     </table>
     <div class="text-center">
-      <a href="{{ route('comics.create') }}" class="btn btn-danger">Crea una nuova pasta</a>
+      <a href="{{ route('comics.create') }}" class="btn btn-danger">Crea un nuovo fumetto</a>
   <table class="table">
 </div>
 @endsection
