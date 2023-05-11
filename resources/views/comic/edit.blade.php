@@ -14,7 +14,7 @@ Modifica
 <div class="container">
     <a href="{{ route('comics.index') }}" class="btn btn-primary btn-sm">Torna all'elenco</a>
    
-    <form action="{{ route('comics.store') }}" method="POST">
+    <form action="{{ route('comics.update', $comic->id) }}" method="POST">
         @csrf
 
         @method('PUT')
