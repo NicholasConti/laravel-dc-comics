@@ -32,7 +32,7 @@ Creazione
 
         <div class="mb-3">
             <label for="prezzo" class="form-label">Prezzo</label>
-            <input type="number" class="form-control" id="prezzo" name="price" min="5" max="20">
+            <input type="number" class="form-control" id="prezzo" name="price" step=0.01 min="5" max="20">
         </div>
         <div class="mb-3">
             <label for="serie" class="form-label">Serie</label>
@@ -50,7 +50,7 @@ Creazione
             <label for="writers" class="form-label">SCrittori</label>
             <textarea class="form-control" id="writers" rows="2" name="writers"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Crea</button>
       </form>
 
 </div>  

@@ -27,9 +27,14 @@
         <td>{{ $comic->title}}</td>
         <td>{{ $comic->price}}$</td>
         <td>{{ $comic->sale_date}}</td>
-        <td>
+        <td class="d-flex gap-2">
           <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-primary btn-sm">Dettagli</a>
           <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning btn-sm">Modifica</a>
+          <form action="{{ route('comics.destroy', $comic->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <input type="submit" value="Elimina" class="btn btn-danger btn-sm">
+          </form>
         </td>
     </tr>  
     @endforeach

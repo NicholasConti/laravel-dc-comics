@@ -52,7 +52,7 @@ Modifica
             <label for="writers" class="form-label">SCrittori</label>
             <textarea class="form-control" id="writers" rows="2" name="writers">{{$comic->writers}}</textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Modifica</button>
       </form>
 
 </div>  
