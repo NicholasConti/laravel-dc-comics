@@ -36,7 +36,11 @@ Creazione
         </div>
         <div class="mb-3">
             <label for="serie" class="form-label">Serie</label>
-            <input type="text" class="form-control" id="serie" name="type">
+            <input type="text" class="form-control" id="serie" name="series">
+        </div>
+        <div class="mb-3">
+            <label for="tipo" class="form-label">Tipo</label>
+            <input type="text" class="form-control" id="tipo" name="type">
         </div>
         <div class="mb-3">
             <label for="data" class="form-label">Data di uscita</label>
