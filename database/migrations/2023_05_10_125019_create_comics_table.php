@@ -23,8 +23,8 @@ return new class extends Migration
             $table->string('series', 50);
             $table->date('sale_date');
             $table->string('type', 100);
-            $table->string('artists'); //not sure
-            $table->string('writers'); //not sure
+            $table->string('artists');
+            $table->string('writers');
 
             $table->timestamps();
         });
