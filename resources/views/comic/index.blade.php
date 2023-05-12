@@ -7,6 +7,9 @@
 @section('page.title')
 <div class="container">
     <h1>Elenco fumetti</h1>
+    <div class="mb-2">
+      <a href="{{ route('comics.create') }}" class="btn btn-success">Crea un nuovo fumetto</a>
+    </div>
 </div>  
 @endsection
 
@@ -39,9 +42,6 @@
     </tr>  
     @endforeach
     </tbody>
-    </table>
-    <div class="text-center">
-      <a href="{{ route('comics.create') }}" class="btn btn-danger">Crea un nuovo fumetto</a>
-  <table class="table">
-</div>
+  </table>
+    
 @endsection
